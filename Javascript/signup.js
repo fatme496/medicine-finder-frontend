@@ -26,7 +26,7 @@ form.addEventListener("submit", async (e) => {
   submitBtn.textContent = "Processing...";
 
   try {
-    const response = await fetch(`${API_URL}/userRoutes.php?action=add`, {
+    const response = await fetch(`${API_URL}/userRoutes.php?action=register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ form.addEventListener("submit", async (e) => {
     successText.style.display = "block";
 
     setTimeout(() => {
-      window.location.href = "/login.html";
+      window.location.href = "/html/login.html";
     }, 2000);
   } catch (error) {
     errorText.textContent = error.message;
