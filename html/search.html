@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Medicine Finder</title>
+  <link rel="stylesheet" href="../styles/search.css" />
+</head>
+<body>
+  <section class="search-section">
+    <div class="">
+      <h1>Find Your Medicine</h1>
+      <p class="lead">Search for available medications or nearby pharmacies</p>
+    </div>
+  </section>
+  <div class="container">
+    <!-- Search Form -->
+    <form id="searchForm">
+      <input type="text" id="medicineInput" placeholder="Enter medicine name..." required />
+      <button type="submit">Search</button>
+    </form>
+
+    <div class="filters-bar">
+      <div class="filter-group">
+        <label for="governorateSelect">Governorate</label>
+        <select id="governorateSelect">
+          <option value="">All</option>
+          <option value="Akkar">Akkar</option>
+          <option value="North Lebanon">North Lebanon</option>
+          <option value="Baalbeck-Hermel">Baalbeck-Hermel</option>
+          <option value="Beirut">Beirut</option>
+          <option value="Bekaa">Bekaa</option>
+          <option value="Mount Lebanon">Mount Lebanon</option>
+          <option value="Nabatiyeh">Nabatiyeh</option>
+          <option value="Keserwan-Jbeil">Keserwan-Jbeil</option>
+          <option value="South Lebanon">South Lebanon</option>
+        </select>
+      </div>
+    
+      <div class="filter-group">
+        <label for="districtSelect">District</label>
+        <select id="districtSelect">
+          <option value="">All</option>
+          <option value="Akkar">Akkar</option>
+          <option value="Tripoli">Tripoli</option>
+          <option value="Batroun">Batroun</option>
+          <option value="Bsharri">Bsharri</option>
+          <option value="Koura">Koura</option>
+          <option value="Miniyeh-Danniyeh District">Miniyeh-Danniyeh District</option>
+          <option value="Zgharta">Zgharta</option>
+          <option value="Baalbek">Baalbek</option>
+          <option value="Hermel">Hermel</option>
+          <option value="Beirut">Beirut</option>
+          <option value="Rashaya">Rashaya</option>
+          <option value="Western Beqaa">Western Beqaa</option>
+          <option value="Zahlé">Zahlé</option>
+          <option value="Aley">Aley</option>
+          <option value="Baabda">Baabda</option>
+          <option value="Chouf">Chouf</option>
+          <option value="Matn">Matn</option>
+          <option value="Bint Jbeil">Bint Jbeil</option>
+          <option value="Hasbaya">Hasbaya</option>
+          <option value="Marjeyoun">Marjeyoun</option>
+          <option value="Byblos">Byblos</option>
+          <option value="Keserwan">Keserwan</option>
+          <option value="Sidon">Sidon</option>
+          <option value="Jezzine">Jezzine</option>
+          <option value="Tyre">Tyre</option>
+        </select>
+      </div>
+    </div>    
+
+    <div id="resultsContainer"></div>
+  </div>
+
+  <script src="../Javascript/search2.js"></script>
+</body>
+</html>
