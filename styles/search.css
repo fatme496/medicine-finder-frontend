@@ -1,0 +1,165 @@
+body {
+  background-color: #e6f0fa;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+.search-section {
+  padding: 20px 0;
+  background: linear-gradient(to bottom, #005eff, #125c9a);
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+form input {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #0a4e8b;
+}
+
+form input:focus {
+  border-color: #125c9a; /* Blue border on focus */
+  outline: none;
+}
+
+form button {
+  padding: 10px 20px;
+  background-color: #125c9a; /* Blue accent */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+form button:hover {
+  background-color: #0a4e8b; /* Darker blue on hover */
+}
+
+.filters-bar {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  background-color: #f9f9f9; /* Light background */
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 220px;
+}
+
+.filter-group label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 0.95rem;
+  color: #125c9a; /* Blue text */
+}
+
+.filter-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  transition: border-color 0.3s ease;
+}
+
+.filter-group select:focus {
+  border-color: #4CAF50; /* Green border on focus */
+  outline: none;
+}
+
+.location-card {
+  background-color: #fff;
+  border-left: 6px solid #125c9a; /* Green accent */
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.location-card h3 {
+  margin-top: 0;
+  color: #125c9a; /* Blue for card titles */
+}
+
+.medicine-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.medicine-list li {
+  padding: 4px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .filters-bar {
+      flex-direction: column;
+  }
+
+  form {
+      flex-direction: column;
+  }
+}
+/* Style for select dropdown */
+select {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  color: #125c9a;
+  background-color: #ffffff;
+  border: 2px solid #125c9a;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+}
+
+/* Arrow icon fix for select on WebKit */
+select::-ms-expand {
+  display: none;
+}
+
+select:focus {
+  outline: none;
+  border-color: #005eff;
+  box-shadow: 0 0 0 3px rgba(0, 94, 255, 0.2);
+}
+
+/* Optional: custom style for options */
+option {
+  padding: 8px;
+  font-size: 1rem;
+  background-color: #ffffff;
+  color: #125c9a;
+}
