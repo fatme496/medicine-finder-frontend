@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VitaMed - Share & Access Medicines</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #e0e4ec;
+      scroll-behavior: smooth;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #247cc0;
+    }
+
+   .hero {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url('../assets/background2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: bold;
+      animation: slideInDown 1s ease-out;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .hero .btn {
+      margin: 10px;
+      animation: fadeIn 2.5s ease-out;
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 30px;
+      position: relative;
+      animation: fadeInUp 1s ease-in;
+      color: #1a3c5f;
+    }
+
+    .about-text,
+    .how-step {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease-out;
+    }
+
+    .visible {
+      opacity: 1 !important;
+      transform: translateY(0) !important;
+    }
+
+    .how-step i {
+      font-size: 40px;
+      color: #125c9a;
+      margin-bottom: 15px;
+    }
+
+    .cta-section {
+      background: linear-gradient(to right, #2e7cc6, #004b8d);
+      color: white;
+      text-align: center;
+      padding: 70px 0;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .footer {
+      background-color: #1a1f25;
+      color: white;
+      padding: 30px 0;
+    }
+
+    /* Animations */
+    @keyframes slideInDown {
+      from { transform: translateY(-100px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeInUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="#">VitaMed</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Donate</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/search.html">Find Medicine</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/html/signup.html">SignUp</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <h1>Connect Donate Heal</h1>
+    <p class="lead mt-3">Bridging the gap between those who need medicine and those who can help.</p>
+    <a href="/html/search.html" class="btn btn-light btn-lg">Find Medicine</a>
+    <a href="sign.html" class="btn btn-outline-light btn-lg">Donate Medicine</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="section-title">About VitaMed</h2>
+    <p class="lead about-text">
+      VitaMed is a modern humanitarian platform that solves two challenges: people in urgent need of medications, and the waste of unused medicines.
+    </p>
+    <p class="about-text mt-3">
+      We offer:
+      <strong>1.</strong> A smart search tool that connects users to pharmacies nearby that have the medicine in stock.
+      <br/>
+      <strong>2.</strong> A donation system where users can give away valid, unused medicines.
+    </p>
+    <p class="about-text mt-3">
+      The goal is simple: make medications more accessible, reduce waste, and encourage community support.
+    </p>
+  </div>
+</section>
+
+<!-- How It Works -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center section-title">How It Works</h2>
+    <div class="row text-center">
+      <div class="col-md-4 how-step">
+        <i class="fas fa-search"></i>
+        <h4>Search</h4>
+        <p>Find medications by name and location.</p>
+      </div>
+      <div class="col-md-4 how-step">
+        <i class="fas fa-hand-holding-heart"></i>
+        <h4>Donate</h4>
+        <p>Share what you have with people in need.</p>
+      </div>
+      <div class="col-md-4 how-step">
+        <i class="fas fa-hospital-user"></i>
+        <h4>Receive</h4>
+        <p>Connect to get your needed treatment.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta-section">
+  <div class="container">
+    <h2>Got Unused Medicine?</h2>
+    <p class="mt-3 mb-4">Don’t let it expire. Someone might need it right now.</p>
+    <a href="#" class="btn btn-light btn-lg">Donate Now</a>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+  <div class="container">
+    <p>&copy; 2025 VitaMed. All rights reserved.</p>
+    <p>Follow us: Facebook | Instagram | WhatsApp</p>
+  </div>
+</footer>
+
+<script>
+  // Scroll-triggered animations
+  const revealElements = document.querySelectorAll('.about-text, .how-step');
+
+  window.addEventListener('scroll', () => {
+    const triggerBottom = window.innerHeight * 0.85;
+
+    revealElements.forEach(el => {
+      const elTop = el.getBoundingClientRect().top;
+      if (elTop < triggerBottom) {
+        el.classList.add('visible');
+      }
+    });
+  });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
