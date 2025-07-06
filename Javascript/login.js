@@ -35,7 +35,7 @@ document.getElementById("login-form").addEventListener("submit", async function 
 
             // Redirect after success (optional)
             setTimeout(() => {
-                window.location.href = "/html/dashboard.html"; // change as needed
+                window.location.href = "/html/home.html";
             }, 1000);
         }
     } catch (err) {
