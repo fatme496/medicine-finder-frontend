@@ -1,10 +1,10 @@
 const form = document.getElementById("signup-form");
 const nameInput = document.getElementById("name");
-const emailInput = document.getElementById("email");
-const passwordInput = document.getElementById("password");
+const emailInput = document.getElementById("email-up");
+const passwordInput = document.getElementById("password-up");
 const phoneInput = document.getElementById("phone");
-const errorText = document.getElementById("error");
-const successText = document.getElementById("success");
+const errorText = document.getElementById("error-up");
+const successText = document.getElementById("success-up");
 const submitBtn = document.getElementById("submit-btn");
 
 const API_URL = window.API_URL;
@@ -44,7 +44,7 @@ form.addEventListener("submit", async (e) => {
     successText.style.display = "block";
 
     setTimeout(() => {
-      window.location.href = "/html/login.html";
+      window.location.href = "/html/sign-up.html";
     }, 2000);
   } catch (error) {
     errorText.textContent = error.message;
